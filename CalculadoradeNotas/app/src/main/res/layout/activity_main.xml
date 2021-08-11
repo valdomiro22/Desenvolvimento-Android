@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--BackgroundTint para mudar a cor de fundo do botão background para mudar a cor do texto-->
+    <EditText
+        android:id="@+id/nota1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/gray"
+        android:hint="Nota 1"
+        android:inputType="number"
+        android:maxLength="2"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/nota2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="Nota 2"
+        android:padding="20dp"
+        android:background="@color/gray"
+        android:inputType="number"
+        android:maxLength="2"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:id="@+id/nota3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="Nota 3"
+        android:padding="20dp"
+        android:background="@color/gray"
+        android:inputType="number"
+        android:maxLength="2"
+        android:gravity="center"
+        android:layout_below="@id/nota1"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <EditText
+        android:id="@+id/nota4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="Nota 4"
+        android:padding="20dp"
+        android:background="@color/gray"
+        android:inputType="number"
+        android:maxLength="2"
+        android:gravity="center"
+        android:layout_below="@id/nota2"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="50dp"
+        />
+
+
+    <EditText
+        android:id="@+id/faltas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:hint="Número de faltas"
+        android:padding="20dp"
+        android:background="@color/gray"
+        android:inputType="number"
+        android:maxLength="2"
+        android:gravity="center"
+        android:layout_below="@id/nota3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+
+    <Button
+        android:id="@+id/bt_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="@color/dark_gray"
+        android:padding="20dp"
+        android:layout_below="@id/faltas"
+        android:layout_margin="30dp"
+        />
+
+    <TextView
+        android:id="@+id/txt_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/bt_calcular"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+</RelativeLayout>
